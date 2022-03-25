@@ -1,10 +1,13 @@
 tasks:
-  - name: Prepare PlatformIO
+  - name: Setup PlatformIO
     before: |
       pip3 install -U platformio
       platformio upgrade --dev
       platformio update
-    command: platformio run
+    init: platformio run --list-targets
+
+  - name: Build Firmware
+    init: platformio run
 
 vscode:
   extensions:

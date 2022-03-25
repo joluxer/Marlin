@@ -1,6 +1,6 @@
 tasks:
   - name: Prepare PlatformIO
-    init: |
+    before: |
       pip3 install -U platformio
       platformio upgrade --dev
       platformio update

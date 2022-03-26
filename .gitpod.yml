@@ -6,8 +6,8 @@ tasks:
       platformio update
     init: platformio run --list-targets
 
-  - name: Build Firmware
-    init: platformio run
+#  - name: Build Firmware
+#    init: platformio run
 
 vscode:
   extensions:

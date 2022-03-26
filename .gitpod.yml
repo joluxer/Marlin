@@ -4,8 +4,8 @@ tasks:
       pip3 install -U platformio
       platformio upgrade --dev
       platformio update
-    init: |
-      platformio run -e STM32F103RET6_creality
+    init: platformio run -e STM32F103RET6_creality
+    command: platformio run -e STM32F103RET6_creality
 
 github:
   prebuilds:

@@ -5,7 +5,7 @@ tasks:
       platformio upgrade --dev
       platformio update
     init: platformio run --list-targets
-    command: platformio run
+  - command: platformio run
 
 vscode:
   extensions:

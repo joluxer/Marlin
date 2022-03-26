@@ -4,8 +4,12 @@ tasks:
       pip3 install -U platformio
       platformio upgrade --dev
       platformio update
-    init: platformio run --list-targets
-  - command: platformio run -e STM32F103RET6_creality
+    init: |
+      platformio run --list-targets
+      gp sync-done list-targets # 'list-targets' is an arbitrary name
+  - command: |
+      gp sync-await list-targets # wait for the above 'init' to finish
+      platformio run -e STM32F103RET6_creality
 
 vscode:
   extensions:

@@ -1,5 +1,5 @@
 tasks:
-  - name: Setup PlatformIO
+  - name: PlatformIO Build
     before: |
       pip3 install -U platformio
       platformio upgrade --dev
